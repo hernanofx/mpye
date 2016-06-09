@@ -1,2 +1,1 @@
-root "#index.html"
-"Prueba de pagina"
+root "mpye#index.html"
