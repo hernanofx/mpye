@@ -1,2 +1,2 @@
-root to: "application#index.html"
+root "#index.html"
 "Prueba de pagina"
