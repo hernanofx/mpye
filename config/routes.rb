@@ -1,2 +1,2 @@
-root "application#index.html"
+root to: "application#index.html"
 Hello world
