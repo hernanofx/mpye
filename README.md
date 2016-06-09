@@ -1,2 +1,0 @@
-# mpye
-App de prueba
