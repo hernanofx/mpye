@@ -1,2 +1,2 @@
 root to: "application#index.html"
-Hello world
+"Prueba de pagina"
