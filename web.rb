@@ -1,6 +1,6 @@
 require 'sinatra'
 
-get '/' do
+# get '/' do
 
 puts "Cual es tu nombre?"
 
