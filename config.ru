@@ -1,2 +1,2 @@
-require './web'
+require './web.rb'
 run HelloWorldApp
