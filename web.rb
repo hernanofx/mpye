@@ -6,5 +6,7 @@
 #  erb :index
 #end
 
+require 'ruby'
+
 "prueba"
 end
