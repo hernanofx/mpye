@@ -1,11 +1,12 @@
 require 'sinatra'
 
-class HelloWorldApp < config.ru
+class HelloWorldApp < Sinatra::Base
   get '/' do
     "Hello, world!"
   end
 
-  get '/:name' do
+=begin get '/:name' do
     "Hello, #{params[:name]}!"
   end
 end
+=end
