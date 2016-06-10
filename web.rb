@@ -2,9 +2,7 @@ require 'sinatra'
 
 get '/' do
 
-print "Cual es tu nombre?"
-
-
+"Cual es tu nombre?"
 
 
 end
