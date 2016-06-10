@@ -5,7 +5,7 @@ require 'sinatra'
     "Hello, world!"
   end
 
- get '/:name' do
-    "Hello, #{params[:name]}!"
-  end
-end
+ #get '/:name' do
+  #  "Hello, #{params[:name]}!"
+  #end
+#end
