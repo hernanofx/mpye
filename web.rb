@@ -1,7 +1,9 @@
 require 'sinatra'
 
-# get '/' do
+#get '/' do
+# "Cual es tu nombre?"
+#end
 
- "Cual es tu nombre?"
-
+get '/' do
+  erb :index
 end
