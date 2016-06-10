@@ -1,16 +1,7 @@
-=begin require 'sinatra'
-get '/' do
- "Cual es tu nombre?"
-end
-=end
-
-#require 'ruby'
-#"prueba"
-#end
-
 require 'sinatra'
-#require 'slim'
 
-get '/' do
-  "hola"
+class HelloWorldApp < Sinatra::Base
+  get '/' do
+    "Hello, world!"
+  end
 end
