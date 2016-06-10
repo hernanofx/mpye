@@ -9,6 +9,10 @@ get '/form' do
   erb :form
 end
 
+get '/about' do
+  'Un poco acerca de mi.'
+end
+
 post '/form' do
-  "You said '#{params[:message]}'"
+  "Vos dijiste '#{params[:message]}'"
 end
