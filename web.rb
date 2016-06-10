@@ -9,7 +9,7 @@ end
 #end
 
 require 'sinatra'
-require 'slim'
+#require 'slim'
 
 get '/' do
   "hola"
