@@ -1,6 +1,6 @@
 require 'sinatra'
 
-class HelloWorldApp < Sinatra::Base
+class HelloWorldApp < config.ru
   get '/' do
     "Hello, world!"
   end
