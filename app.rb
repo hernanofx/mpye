@@ -5,8 +5,7 @@ class HelloWorldApp < Sinatra::Base
     "Hello, world!"
   end
 
-=begin get '/:name' do
+ get '/:name' do
     "Hello, #{params[:name]}!"
   end
 end
-=end
