@@ -1,12 +1,8 @@
-#require 'sinatra'
-#get '/' do
-# "Cual es tu nombre?"
-#end
-#get '/' do
-#  erb :index
-#end
-
-require 'ruby'
-
-"prueba"
+require 'sinatra'
+get '/' do
+ "Cual es tu nombre?"
 end
+
+#require 'ruby'
+#"prueba"
+#end
