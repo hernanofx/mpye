@@ -2,6 +2,6 @@ require 'sinatra'
 
 get '/' do
 
-"Cual es tu nombre?"
+puts "Cual es tu nombre?"
 
 end
