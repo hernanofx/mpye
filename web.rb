@@ -6,11 +6,7 @@ get '/' do
 a = 10
 b = 11
 
-  if a < b
-    print "a es menor que b!"
-  elsif b > a
-    print "b es menor que a!"
-  else
-    print "b es igual a a!"
+  print "Cual es tu nombre?"
+  tu_nombre = gets.chomp
 
 end
