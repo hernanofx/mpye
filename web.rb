@@ -9,6 +9,10 @@ get '/form' do
   erb :form
 end
 
+get '/home' do
+  html :home
+end
+
 get '/about' do
   'Un poco acerca de mi.'
 end
