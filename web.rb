@@ -13,11 +13,6 @@ get '/about' do
   erb :about
 end
 
-=begin get '/about' do
-  'Un poco acerca de mi.'
-end
-=end
-
 get '/hello/:name' do
   params[:name]
 end
@@ -44,4 +39,9 @@ get '/' do
 end
 
 
+=end
+
+=begin get '/about' do
+  'Un poco acerca de mi.'
+end
 =end
