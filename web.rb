@@ -30,10 +30,11 @@ get '/' do
   erb :layout
 end
 
-=begin get '/home' do
+get '/home' do
   erb :index
 end
 
+=begin
 get '/' do
   "Pagina de Hernán, en construcción!"
 end
