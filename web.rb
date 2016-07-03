@@ -10,7 +10,7 @@ get '/form' do
 end
 
 get '/home' do
-  index.html
+  haml :index.html
 end
 
 get '/about' do
