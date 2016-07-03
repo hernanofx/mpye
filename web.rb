@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'sinatra'
-require 'sinatra/reloader
+
 
 get '/' do
   "Pagina de Hernán, en construcción!"
