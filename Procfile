@@ -1,1 +1,1 @@
-web: bundle exec ruby /views/form.erb -p $PORT
+web: bundle exec ruby web.rb -p $PORT
