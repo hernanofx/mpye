@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'sinatra'
+require 'sinatra/reloader
 
 get '/' do
   "Pagina de Hernán, en construcción!"
@@ -10,7 +11,7 @@ get '/form' do
 end
 
 get '/home' do
-  haml :index.html
+  erb :index.html
 end
 
 get '/about' do
