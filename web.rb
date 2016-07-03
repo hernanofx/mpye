@@ -2,7 +2,7 @@ require 'rubygems'
 require 'sinatra'
 
 get '/' do
-  "Hello, World!"
+  "Pagina de Hernán, en construcción!"
 end
 
 get '/form' do
@@ -10,7 +10,7 @@ get '/form' do
 end
 
 get '/home' do
-  html :index
+  haml :index
 end
 
 get '/about' do
