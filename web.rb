@@ -10,7 +10,7 @@ get '/form' do
 end
 
 get '/home' do
-  erb :home
+  html :index
 end
 
 get '/about' do
