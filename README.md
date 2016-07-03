@@ -1,2 +1,1 @@
-App de prueba de Ruby, Github y Heroku
-......... Hecho a pulmón por un ignorante .........
+App de prueba de Ruby, Sinatra, Github y Heroku
