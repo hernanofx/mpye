@@ -9,6 +9,10 @@ get '/form' do
   erb :form
 end
 
+get '/' do
+  erb :about
+end
+
 =begin get '/about' do
   'Un poco acerca de mi.'
 end
