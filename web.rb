@@ -9,7 +9,7 @@ get '/form' do
   erb :form
 end
 
-get '/' do
+get '/about' do
   erb :about
 end
 
