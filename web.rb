@@ -1,10 +1,6 @@
 require 'rubygems'
 require 'sinatra'
 
-=begin get '/' do
-  erb :layout
-end
-=end
 
 get '/' do
   "Pagina de Hernán, en construcción!"
@@ -14,8 +10,13 @@ get '/form' do
   erb :form
 end
 
-get '/home' do
-  erb :index.html
+=begin get '/home' do
+  erb :index
+end
+=end
+
+get '/' do
+  erb :index
 end
 
 get '/about' do
@@ -26,7 +27,10 @@ get '/hello/:name' do
   params[:name]
 end
 
-
 post '/form' do
   "Vos dijiste '#{params[:message]}'"
+end
+
+get '/' do
+  erb :layout
 end
