@@ -5,23 +5,14 @@ get '/' do
   erb :index
 end
 
-get '/' do
-  "Pagina de Hernán, en construcción!"
-end
-
 get '/form' do
   erb :form
 end
 
-=begin get '/home' do
-  erb :index
-end
-=end
-
-
-get '/about' do
+=begin get '/about' do
   'Un poco acerca de mi.'
 end
+=end
 
 get '/hello/:name' do
   params[:name]
@@ -34,3 +25,14 @@ end
 get '/' do
   erb :layout
 end
+
+=begin get '/home' do
+  erb :index
+end
+
+get '/' do
+  "Pagina de Hernán, en construcción!"
+end
+
+
+=end
