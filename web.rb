@@ -1,9 +1,10 @@
 require 'rubygems'
 require 'sinatra'
 
-get '/' do
+=begin get '/' do
   erb :layout
 end
+=end
 
 get '/' do
   "Pagina de Hernán, en construcción!"
