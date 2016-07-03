@@ -1,6 +1,9 @@
 require 'rubygems'
 require 'sinatra'
 
+get '/' do
+  erb :index
+end
 
 get '/' do
   "Pagina de Hernán, en construcción!"
@@ -15,9 +18,6 @@ end
 end
 =end
 
-get '/' do
-  erb :index
-end
 
 get '/about' do
   'Un poco acerca de mi.'
