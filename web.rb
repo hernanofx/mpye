@@ -26,3 +26,7 @@ end
 post '/form' do
   "Vos dijiste '#{params[:message]}'"
 end
+
+get '/' do
+  erb :layout
+end
