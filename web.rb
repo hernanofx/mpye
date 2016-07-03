@@ -1,6 +1,9 @@
 require 'rubygems'
 require 'sinatra'
 
+get '/' do
+  erb :layout
+end
 
 get '/' do
   "Pagina de Hernán, en construcción!"
@@ -25,8 +28,4 @@ end
 
 post '/form' do
   "Vos dijiste '#{params[:message]}'"
-end
-
-get '/' do
-  erb :layout
 end
