@@ -13,6 +13,10 @@ get '/about' do
   erb :about
 end
 
+get '/' do
+  erb :presupuesto
+end
+
 get '/hello/:name' do
   params[:name]
 end
