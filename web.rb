@@ -14,7 +14,7 @@ get '/about' do
 end
 
 get '/presupuesto' do
-  erb :presupuesto
+  rb :presupuesto
 end
 
 get '/hello/:name' do
