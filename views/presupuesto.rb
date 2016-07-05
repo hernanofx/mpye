@@ -1,3 +1,5 @@
+require 'rubygems'
+require 'sinatra'
 
 class presupuesto
 presupuesto = 0
@@ -10,4 +12,4 @@ retiro = 0
 entrega = 100
 copias = 80
 
-puts "#{presupuesto} + {instpro} + {instso} + {instmemo} + {placas} + {fuente} + {retiro} + {entrega} + {copias}"
+puts "presupuesto + instpro + instso + instmemo + placas + fuente + retiro + entrega + copias"
