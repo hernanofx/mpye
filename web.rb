@@ -36,16 +36,3 @@ end
 get '/contact' do
   erb :contact
 end
-
-=begin
-get '/' do
-  "Pagina de Hernán, en construcción!"
-end
-
-
-=end
-
-=begin get '/about' do
-  'Un poco acerca de mi.'
-end
-=end
