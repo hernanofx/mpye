@@ -13,7 +13,7 @@ get '/about' do
   erb :about
 end
 
-get '/' do
+get '/presupuesto' do
   erb :presupuesto
 end
 
