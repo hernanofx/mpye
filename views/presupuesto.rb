@@ -1,6 +1,3 @@
-require 'rubygems'
-require 'sinatra'
-
 
 class presupuesto
 presupuesto = 0
