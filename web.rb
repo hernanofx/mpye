@@ -5,10 +5,6 @@ get '/' do
   erb :index
 end
 
-get '/form' do
-  erb :form
-end
-
 get '/about' do
   erb :about
 end
@@ -18,16 +14,20 @@ get '/presupuesto' do
 
 end
 
-get '/presupuestado' do
- erb :presupuestado
+get '/presupuesto' do
+ erb :presupuesto
 end
 
-get '/presupuestado' do
+get '/presupuestado/:' do
     params[:presupuestado]
 end
 
 post '/presupuestado' do
   "Este es tu presupuesto '#{params[:presupuestado]}'"
+end
+
+get '/form' do
+  erb :form
 end
 
 get '/hello/:name' do

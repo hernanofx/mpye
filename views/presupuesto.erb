@@ -1,16 +1,18 @@
+# Formulario con valores requeridos
 <form action="/presupuestado" method="post">
   <input type="checkbox" name="presupuesto" value="$0"> Presupuesto <br>
-  <input type="checkbox" name="instpro" value="$150"> Instalación de programas<br>
-  <input type="checkbox" name="instso" value="$200"> Instalación de Sistema Operativo<br>
-  <input type="checkbox" name="instmem" value="$1000"> Instalación de memorias<br>
-  <input type="checkbox" name="placas" value="$150"> Instalación de placas (sonido, imagen, etc..)<br>
-  <input type="checkbox" name="fuente" value="$150"> Cambio de fuente<br>
-  <input type="checkbox" name="retiro" value="$0"> Retiro de la pc de domicilio<br>
-  <input type="checkbox" name="entrega" value="$100"> Entrega del equipo en su domicilio<br>
-  <input type="checkbox" name="copias" value="$80"> Copias de cd/dvds<br>
+
+  <input type="checkbox" name="instpro" value="$150" id="chk1"><label for="chk1">Checkbox 1</Instalacion de programas><br>
+  <input type="checkbox" name="instso" value="$200" id="chk2"><label for="chk2">Checkbox 2</Instalacion de Sistema Operativo><br>
+  <input type="checkbox" name="instmem" value="$1000" id="chk3"><label for="chk3">Checkbox 3</Instalacion de memorias><br>
+  <input type="checkbox" name="placas" value="$150" id="chk4"><label for="chk4">Checkbox 4</Instalacion de placas (sonido, imagen, etc..)><br>
+  <input type="checkbox" name="fuente" value="$150" id="chk5"><label for="chk5">Checkbox 5</Cambio de fuente><br>
+  <input type="checkbox" name="retiro" value="$0" id="chk6"><label for="chk6">Checkbox 6</Retiro de la pc de domicilio><br>
+  <input type="checkbox" name="entrega" value="$100" id="chk7"><label for="chk7">Checkbox 7</Entrega del equipo en su domicilio><br>
+  <input type="checkbox" name="copias" value="$80" id="chk8"><label for="chk8">Checkbox 8</Copias de cd/dvds><br>
   <textarea name="message" rows="10" cols="30">  Otros, brindar mas información  </textarea><br>
   <br>
-
+# Formulario con datos del usuario
   <input type="text" name="primernombre"> Nombre<br>
   <input type="text" name="apellido"> Apellido<br>
   <input type="tel" name="telefono"> Teléfono<br>
@@ -19,6 +21,16 @@
   <input type="number" name="altura"> Altura<br>
   <input type="text" name="piso"> Piso<br>
   <input type="text" name="localidad"> Localidad<br>
-  <input type="submit" value="Presupuestar">
+  <input type="button"name="Presupuestar" value="Contar" onClick="contar();">
+  <br>
 
   </form>
+
+  var checkboxes = document.getElementById("presupuestado").checkbox;
+  var cont = 0; 
+
+for (var x=0; x < checkboxes.length; x++) {
+ if (checkboxes[x].checked) {
+  cont = cont + 1;
+ }
+}
