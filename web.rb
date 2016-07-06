@@ -19,7 +19,7 @@ get '/presupuesto' do
 end
 
 get '/presupuestado' do
- php :presupuestado
+ erb :presupuestado
 
 end
 
