@@ -18,6 +18,11 @@ get '/presupuesto' do
 
 end
 
+get '/presupuestado' do
+ erb :presupuestado
+
+end
+
 get '/hello/:name' do
   params[:name]
 end
