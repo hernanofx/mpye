@@ -20,7 +20,14 @@ end
 
 get '/presupuestado' do
  erb :presupuestado
+end
 
+get '/presupuestado' do
+    params[:presupuestado]
+end
+
+post '/presupuestado' do
+  "Este es tu presupuesto '#{params[:presupuestado]}'"
 end
 
 get '/hello/:name' do
