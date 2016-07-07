@@ -23,7 +23,7 @@ get '/presupuestado:' do
 end
 
 post '/presupuestado' do
-  "Este es tu presupuesto '#{params[:presupuestado]}'"
+  "Este es tu presupuesto '#{params[:checkboxes]}'"
 end
 
 get '/form' do
