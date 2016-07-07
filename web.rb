@@ -1,6 +1,5 @@
 require 'rubygems'
 require 'sinatra'
-require 'sass'
 
 get '/' do
   erb :index
@@ -39,9 +38,10 @@ get '/presu' do
    "Vos dijiste '#{params[:message]}'"
  end
 
- get '/styles' do
-   css :styles
+ get '/styles.css' do
+     scss :styles
  end
+
 
 =begin
 get '/presupuesto' do
