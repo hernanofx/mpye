@@ -19,7 +19,7 @@ get '/presupuestado' do
 end
 
 get '/presupuestado:' do
-    params[:presupuestado]
+    params[:contar]
 end
 
 post '/presupuestado' do
