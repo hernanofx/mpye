@@ -38,10 +38,9 @@ get '/presu' do
    "Vos dijiste '#{params[:message]}'"
  end
 
- get '/styles.css' do
-   content_type 'text/css', :charset => 'utf-8'
+ get '/styles' do
    scss :stylesheet
-end
+ end
 
 =begin
 get '/presupuesto' do
