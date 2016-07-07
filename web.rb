@@ -18,12 +18,12 @@ get '/presupuestado' do
  erb :presupuestado
 end
 
-get '/presupuesto/:' do
+get '/presupuestado:' do
     params[:presupuestado]
 end
 
-post '/presupuesto' do
-  "Este es tu presupuesto '#{params[:presupuesto]}'"
+post '/presupuestado' do
+  "Este es tu presupuesto '#{params[:presupuestado]}'"
 end
 
 get '/form' do
