@@ -20,7 +20,7 @@ function sumar(){
 </head>
 
 <body>
-<div id="informacion">estás sumando: 0</div>
+<div id="informacion">Tu presupuesto total es: 0</div>
 <form name="miform" id="miform">
     <input name="id" id="clt" type="checkbox" value="0" onclick="sumar()" /> Presupuesto</label><br>
     <input name="id" id="clt" type="checkbox" value="150" onclick="sumar()" /> Instalacion de programas</label><br>
@@ -34,5 +34,22 @@ function sumar(){
 
 
 </form>
+
+
+<form id="form2" action="/presupuestado" method="post">
+
+  <input type="text" name="primernombre"> Nombre<br>
+  <input type="text" name="apellido"> Apellido<br>
+  <input type="tel" name="telefono"> Teléfono<br>
+  <input type="email" name="email"> Email<br>
+  <input type="text" name="calle"> Calle<br>
+  <input type="number" name="altura"> Altura<br>
+  <input type="text" name="piso"> Piso<br>
+  <input type="text" name="localidad"> Localidad<br>
+  <textarea name="message" rows="5" cols="30">  Otros  </textarea><br>
+
+
+</form2>
+
 </body>
 </html>
