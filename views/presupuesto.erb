@@ -1,14 +1,14 @@
 <form id="form1" action="/presupuestado" method="post">
 
-  <input type="checkbox" name="checkbox" value="$0" id="chk1"><label for="chk1"> Presupuesto</label><br>
-  <input type="checkbox" name="checkbox" value="$150" id="chk2"><label for="chk2"> Instalacion de programas</label>  <br>
-  <input type="checkbox" name="checkbox" value="$200" id="chk3"><label for="chk3"> Instalacion de Sistema Operativo</label><br>
-  <input type="checkbox" name="checkbox" value="$100" id="chk4"><label for="chk4"> Instalacion de memorias</label><br>
-  <input type="checkbox" name="checkbox" value="$150" id="chk5"><label for="chk5"> Instalacion de placas (sonido, imagen, etc..)</label><br>
-  <input type="checkbox" name="checkbox" value="$150" id="chk6"><label for="chk6"> Cambio de fuente</label><br>
-  <input type="checkbox" name="checkbox" value="$0" id="chk7"><label for="chk7"> Retiro de la pc de domicilio</label><br>
-  <input type="checkbox" name="checkbox" value="$100" id="chk8"><label for="chk8"> Entrega del equipo en su domicilio</label><br>
-  <input type="checkbox" name="checkbox" value="$80" id="chk9"><label for="chk9"> Copias de cd/dvds</label><br>
+  <input type="checkbox" name="checkbox" value="$0" id="chk1"><label for="chk1"> <onclick="sumar()" /> Presupuesto</label><br>
+  <input type="checkbox" name="checkbox" value="$150" id="chk2"><label for="chk2"> <onclick="sumar()" /> /Instalacion de programas</label>  <br>
+  <input type="checkbox" name="checkbox" value="$200" id="chk3"><label for="chk3"> <onclick="sumar()" /> Instalacion de Sistema Operativo</label><br>
+  <input type="checkbox" name="checkbox" value="$100" id="chk4"><label for="chk4"> <onclick="sumar()" /> Instalacion de memorias</label><br>
+  <input type="checkbox" name="checkbox" value="$150" id="chk5"><label for="chk5"> <onclick="sumar()" /> Instalacion de placas (sonido, imagen, etc..)</label><br>
+  <input type="checkbox" name="checkbox" value="$150" id="chk6"><label for="chk6"> <onclick="sumar()" /> Cambio de fuente</label><br>
+  <input type="checkbox" name="checkbox" value="$0" id="chk7"><label for="chk7"> <onclick="sumar()" /> Retiro de la pc de domicilio</label><br>
+  <input type="checkbox" name="checkbox" value="$100" id="chk8"><label for="chk8"> <onclick="sumar()" /> Entrega del equipo en su domicilio</label><br>
+  <input type="checkbox" name="checkbox" value="$80" id="chk9"><label for="chk9"> <onclick="sumar()" /> Copias de cd/dvds</label><br>
   <br>
 
 
@@ -39,7 +39,7 @@
     var cont = 0;
     for (var x=0; x < checkboxes.length; x++) {
       if (checkboxes[x].checked) {
-        cont = "value" 
+        cont = cont + 1;
       }
     }
     </script>
