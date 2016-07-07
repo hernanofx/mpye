@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ejemplo</title>
+<script language="javascript" type="text/javascript">
+function sumar(){
+    obj = document.miform['id'];
+    totalChecks = obj.length;
+    totalSumado = 0;
+    for( i=0; i<totalChecks; i++){
+        if( obj[i].checked == true ){
+            valor = obj[i].value.split('-');
+            totalSumado = totalSumado + parseInt(valor[0],10);
+        }
+    }
+    document.getElementById('informacion').innerHTML = 'estás sumando: '+ totalSumado;
+}
+</script>
+</head>
+
+<body>
+<div id="informacion">estás sumando: 0</div>
+<form name="miform" id="miform">
+    1<input name="id" id="clt" type="checkbox" value="1500-abcd" onclick="sumar()" /><br>
+    2<input name="id" id="clt" type="checkbox" value="2500-abcd" onclick="sumar()" /><br>
+    3<input name="id" id="clt" type="checkbox" value="3500-abcd" onclick="sumar()" /><br>
+    4<input name="id" id="clt" type="checkbox" value="4500-abcd" onclick="sumar()" /><br>
+</form>
+</body>
+</html>

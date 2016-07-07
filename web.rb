@@ -14,6 +14,10 @@ get '/presupuesto' do
 
 end
 
+get '/prueba' do
+ erb :prueba
+ end
+
 get '/presupuestado' do
  erb :form1
 end
