@@ -40,7 +40,7 @@ get '/presu' do
  end
 
  get '/styles' do
-   scss :styles
+   css :styles
  end
 
 =begin
