@@ -19,7 +19,7 @@ get '/presupuestado' do
 end
 
 get '/presupuestado:' do
-    params[:form1]
+    params[:checkbox]
 end
 
 post '/presupuestado' do
