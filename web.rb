@@ -39,7 +39,7 @@ get '/presu' do
    "Vos dijiste '#{params[:message]}'"
  end
 
- get '/stylesheet.css' do
+ get '/styles' do
    content_type 'text/css', :charset => 'utf-8'
    scss :stylesheet
  end
