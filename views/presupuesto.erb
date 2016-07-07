@@ -1,4 +1,4 @@
-<form action="/presupuestado" method="post">
+<form id="form1" action="/presupuestado" method="post">
 
   <input type="checkbox" name="checkbox" value="$0" id="chk1"><label for="chk1"> Presupuesto</label><br>
   <input type="checkbox" name="checkbox" value="$150" id="chk2"><label for="chk2"> Instalacion de programas</label>  <br>
@@ -26,7 +26,7 @@
   <br>
 
   <script>
-  var checkboxes = document.getElementById("presupuestado").checkbox;
+  var checkboxes = document.getElementById("form1").checkbox;
 
   var cont = 0;
   for (var x=0; x < checkboxes.length; x++) {
