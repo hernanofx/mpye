@@ -12,8 +12,6 @@
   <textarea name="message" rows="5" cols="30">  Otros  </textarea><br>
   <br>
 
-  <input type="checkbox" name="checkbox" id="chk1"><label for="chk1">CheckBox 1</label><br>
-
 
   <input type="text" name="primernombre"> Nombre<br>
   <input type="text" name="apellido"> Apellido<br>
@@ -23,7 +21,19 @@
   <input type="number" name="altura"> Altura<br>
   <input type="text" name="piso"> Piso<br>
   <input type="text" name="localidad"> Localidad<br>
-  <input type="button"name="Presupuestar" value="Contar" onClick="contar();">
+
+  <input type="button" name="Presupuestar" value="Contar" onClick="contar();">
   <br>
+
+  <script>
+  var checkboxes = document.getElementById("presupuesto").checkbox;
+
+  var cont = 0;
+  for (var x=0; x < checkboxes.length; x++) {
+ if (checkboxes[x].checked) {
+  cont = cont + 1;
+ }
+}
+</script>
 
   </form>
