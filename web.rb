@@ -15,7 +15,7 @@ get '/presupuesto' do
 end
 
 get '/presupuestado' do
- erb :presupuestado
+ erb :form1
 end
 
 get '/presupuestado:' do
@@ -23,7 +23,7 @@ get '/presupuestado:' do
 end
 
 post '/presupuestado' do
-  "Este es tu presupuesto '#{params[:checkboxes]}'"
+  "Este es tu presupuesto '#{params[:checkbox]}'"
 end
 
 get '/form' do
