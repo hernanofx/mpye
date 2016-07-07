@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'sinatra'
+require 'sass'
 
 get '/' do
   erb :index
@@ -38,7 +39,8 @@ get '/presu' do
    "Vos dijiste '#{params[:message]}'"
  end
 
- get '/styles' do
+ get '/stylesheet.css' do
+   content_type 'text/css', :charset => 'utf-8'
    scss :stylesheet
  end
 
