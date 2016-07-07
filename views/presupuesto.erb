@@ -2,10 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Ejemplo</title>
 <script language="javascript" type="text/javascript">
 function sumar(){
-    obj = document.form1['form1'];
+    obj = document.form['form1'];
     totalChecks = obj.length;
     totalSumado = 0;
     for( i=0; i<totalChecks; i++){
@@ -42,19 +41,5 @@ function sumar(){
 
 </form>
 
-<form id="form2" action="/presupuestado" method="post">
-
-  <input type="text" name="primernombre"> Nombre<br>
-  <input type="text" name="apellido"> Apellido<br>
-  <input type="tel" name="telefono"> Teléfono<br>
-  <input type="email" name="email"> Email<br>
-  <input type="text" name="calle"> Calle<br>
-  <input type="number" name="altura"> Altura<br>
-  <input type="text" name="piso"> Piso<br>
-  <input type="text" name="localidad"> Localidad<br>
-  <textarea name="message" rows="5" cols="30">  Otros  </textarea><br>
-
-
-</form2>
 </body>
 </html>
