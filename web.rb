@@ -14,8 +14,8 @@ get '/presupuesto' do
 
 end
 
-get '/presupuesto' do
- erb :presupuesto
+get '/presupuestado' do
+ erb :presupuestado
 end
 
 get '/presupuestado/:' do
