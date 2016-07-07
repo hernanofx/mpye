@@ -5,17 +5,43 @@ get '/' do
   erb :index
 end
 
+get '/' do
+  erb :layout
+end
+
+get '/home' do
+  erb :index
+end
+
+get '/contact' do
+  erb :contact
+end
+
 get '/about' do
   erb :about
 end
 
+
+get '/presu' do
+ erb :presu
+ end
+
+ get '/form' do
+   erb :form
+ end
+
+ get '/hello/:name' do
+   params[:name]
+ end
+
+ post '/form' do
+   "Vos dijiste '#{params[:message]}'"
+ end
+
+
+=begin
 get '/presupuesto' do
- erb :presupuesto
-
-end
-
-get '/prueba' do
- erb :prueba
+  erb :presupuesto
  end
 
 get '/presupuestado' do
@@ -30,26 +56,4 @@ post '/presupuestado' do
   "Tu presupuesto es de '#{params[:checkbox]}'"
 end
 
-get '/form' do
-  erb :form
-end
-
-get '/hello/:name' do
-  params[:name]
-end
-
-post '/form' do
-  "Vos dijiste '#{params[:message]}'"
-end
-
-get '/' do
-  erb :layout
-end
-
-get '/home' do
-  erb :index
-end
-
-get '/contact' do
-  erb :contact
-end
+=end
