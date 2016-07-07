@@ -38,8 +38,8 @@ get '/presu' do
    "Vos dijiste '#{params[:message]}'"
  end
 
- get '/styles' do
-    erb :styles
+=begin get '/styles' do
+    scss :styles
  end
 
 
