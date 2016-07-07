@@ -38,7 +38,7 @@ get '/presu' do
    "Vos dijiste '#{params[:message]}'"
  end
 
- get '/styles.css' do
+ get '/styles' do
      scss :styles
  end
 
