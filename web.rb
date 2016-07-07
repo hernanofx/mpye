@@ -39,7 +39,7 @@ get '/presu' do
  end
 
  get '/styles' do
-     scss :styles
+    erb :styles
  end
 
 
