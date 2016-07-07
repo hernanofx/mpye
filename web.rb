@@ -40,8 +40,7 @@ get '/presu' do
  end
 
  get '/styles' do
-   content_type 'text/css', :charset => 'utf-8'
-   scss :stylesheet
+   scss :styles
  end
 
 =begin
