@@ -22,6 +22,9 @@
 <div id="informacion">Tu presupuesto total es: 0</div> <br>
 <div id="valores">
 <form name="miform" id="miform" class="w3-container">
+  <div class="w3-row-padding">
+    <div class="w3-half">
+
     <input name="id" id="clt" type="checkbox" value="0" onclick="sumar()" /> Presupuesto</label><br>
     <input name="id" id="clt" type="checkbox" value="150" onclick="sumar()" /> Instalacion de programas</label><br>
     <input name="id" id="clt" type="checkbox" value="200" onclick="sumar()" /> Instalacion de Sistema Operativo</label><br>
@@ -36,21 +39,26 @@
 
     <div id="usuario"></div>
 
+    <div class="w3-row-padding">
+      <div class="w3-half">
+
     Nombre<br>
-    <input type="text"  name="primernombre" class="w3-input"> <br>
+    <input type="text"  name="primernombre" class="w3-input w3-border" type="text" placeholder="Two">
+      </div> <br>
     Apellido<br>
-    <input type="text" name="apellido" class="w3-input"> <br>
-    Teléfono<br><input type="tel" name="telefono"class="w3-input"> <br>
+    <input type="text" name="apellido"> <br>
+    Teléfono<br>
+    <input type="tel" name="telefono"> <br>
     Email<br>
-    <input type="email" name="email"class="w3-input"> <br>
+    <input type="email" name="email"> <br>
     Calle<br>
-    <input type="text" name="calle"class="w3-input"> <br>
+    <input type="text" name="calle"> <br>
     Altura<br>
-    <input type="number" name="altura"class="w3-input"> <br>
+    <input type="number" name="altura"> <br>
     Piso<br>
-    <input type="text" name="piso" class="w3-input"> <br>
+    <input type="text" name="piso"> <br>
     Localidad <br>
-    <input type="text" name="localidad"class="w3-input"> <br>
+    <input type="text" name="localidad"> <br>
     Otros <br>
     <textarea name="message" rows="5" cols="25">   </textarea><br>
   </div>
