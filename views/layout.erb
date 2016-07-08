@@ -6,15 +6,24 @@
   <body>
     <div id='header'>
       <nav>
-
-        <ul class="w3-navbar  w3-blue w3-large" >
-          <li><a href="/">Volver<i class="fa fa-home w3-large"></i></a></li>
-          <li><a href="presu">Presupuesto<i class="fa fa-plane w3-large"> </a></li>
-          <li><a href="contact">Contacto<i class="fa fa-envelope w3-large"></i></i></a></li>
-          <li><a href="about">Sobre mi<i class="fa fa-male w3-large"></a></li>
+        <ul class="w3-navbar w3-card-8 w3-blue w3-large" >
+          <li><a href="/">Volver</a></li>
+          <li><a href="presu">Presupuesto</a></li>
+          <li><a href="contact">Contacto</i></a></li>
+          <li><a href="about">Sobre mi</a></li>
           </ul>
-
       </nav>
+      <nav class="w3-sidenav w3-white" style="width:25%">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+      </nav>
+
+      <div style="margin-left:25%">
+      ... page content ...
+      </div>
+
     </div>
     <div id='main'>
       <%= yield %>
