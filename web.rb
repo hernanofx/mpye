@@ -37,27 +37,3 @@ get '/presu' do
  post '/form' do
    "Vos dijiste '#{params[:message]}'"
  end
-
-=begin get '/styles' do
-    scss :styles
- end
-
-
-=begin
-get '/presupuesto' do
-  erb :presupuesto
- end
-
-get '/presupuestado' do
- erb :form1
-end
-
-get '/presupuestado:' do
-    params[:checkboxes]
-end
-
-post '/presupuestado' do
-  "Tu presupuesto es de '#{params[:checkbox]}'"
-end
-
-=end
