@@ -1,22 +1,27 @@
 <html>
-  <head>
-    <link href="<%= url('/styles.css') %>" rel="stylesheet" type="text/css" />
-    <title>Páginas de prueba de Hernan</title>
-  </head>
-  <body>
-    <div id='header'>
-      <nav>
-        <ul class="w3-navbar w3-card-8 w3-blue w3-large" >
-          <li><a href="/">Volver</a></li>
-          <li><a href="presu">Presupuesto</a></li>
-          <li><a href="contact">Contacto</i></a></li>
-          <li><a href="about">Sobre mi</a></li>
-          </ul>
-      </nav>
+    <head>
+      <link href="<%= url('/styles.css') %>" rel="stylesheet" type="text/css" />
+      <title>Páginas de prueba de Hernan</title>
+    </head>
+    <body>
+      <div id='header'>
+        <nav>
+          <ul class="w3-navbar w3-card-8 w3-blue w3-large" >
+            <li><a href="/">Volver</a></li>
+            <li><a href="presu">Presupuesto</a></li>
+            <li><a href="contact">Contacto</i></a></li>
+            <li><a href="about">Sobre mi</a></li>
+            </ul>
+        </nav>
 
-    </div>
-    <div id='main'>
-      <%= yield %>
-    </div>
-  </body>
+      </div>
+      <div id='main'>
+        <%= yield %>
+      </div>
+    </body>
+  <footer>
+    <p>Posted by: Hege Refsnes</p>
+    <p>Contact information: <a href="mailto:someone@example.com">
+      someone@example.com</a>.</p>
+</footer>
 </html>
